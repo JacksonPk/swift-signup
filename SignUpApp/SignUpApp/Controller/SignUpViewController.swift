@@ -13,9 +13,6 @@ class SignUpViewController : UIViewController {
     
     @IBAction func tocuhedToNextPage(_ sender: Any) {
         
-//        let personalInfoVC = PersonalInfoViewController()
-//        self.navigationController?.pushViewController(personalInfoVC, animated: true)
-        
         let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "PersonalInfoViewController")
         self.navigationController?.pushViewController(pushVC!, animated: true)
     }
@@ -30,7 +27,7 @@ class SignUpViewController : UIViewController {
         
         
         self.view.backgroundColor = .gray
-        navigationController?.isNavigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = true
     }
     
 }
