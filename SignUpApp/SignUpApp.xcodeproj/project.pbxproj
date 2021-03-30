@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		FA6CB5C02611F5910097F29F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB5BF2611F5910097F29F /* AppDelegate.swift */; };
 		FA6CB5C22611F5910097F29F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB5C12611F5910097F29F /* SceneDelegate.swift */; };
-		FA6CB5C42611F5910097F29F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB5C32611F5910097F29F /* SignUpVC.swift */; };
+		FA6CB5C42611F5910097F29F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB5C32611F5910097F29F /* SignUpViewController.swift */; };
 		FA6CB5C72611F5910097F29F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6CB5C52611F5910097F29F /* Main.storyboard */; };
 		FA6CB5C92611F5920097F29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6CB5C82611F5920097F29F /* Assets.xcassets */; };
 		FA6CB5CC2611F5920097F29F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6CB5CA2611F5920097F29F /* LaunchScreen.storyboard */; };
 		FA6CB5D72611F5920097F29F /* SignUpAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB5D62611F5920097F29F /* SignUpAppTests.swift */; };
 		FA6CB5E22611F5920097F29F /* SignUpAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB5E12611F5920097F29F /* SignUpAppUITests.swift */; };
-		FAEC60D52612091D00E9005C /* PesonalInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC60D42612091D00E9005C /* PesonalInfoVC.swift */; };
-		FAEC60DD2612095200E9005C /* PrivacyPolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC60DC2612095200E9005C /* PrivacyPolicyVC.swift */; };
-		FAEC60E22612097200E9005C /* SelectIntersetsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC60E12612097200E9005C /* SelectIntersetsVC.swift */; };
+		FAEC60D52612091D00E9005C /* PesonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC60D42612091D00E9005C /* PesonalInfoViewController.swift */; };
+		FAEC60DD2612095200E9005C /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC60DC2612095200E9005C /* PrivacyPolicyViewController.swift */; };
+		FAEC60E22612097200E9005C /* SelectIntersetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC60E12612097200E9005C /* SelectIntersetsViewController.swift */; };
 		FAEC60E726120C3F00E9005C /* SceneTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC60E626120C3F00E9005C /* SceneTitleLabel.swift */; };
 		FAEC60ED26120E2E00E9005C /* SceneTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC60EC26120E2E00E9005C /* SceneTitle.swift */; };
 /* End PBXBuildFile section */
@@ -43,7 +43,7 @@
 		FA6CB5BC2611F5910097F29F /* SignUpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignUpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6CB5BF2611F5910097F29F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA6CB5C12611F5910097F29F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA6CB5C32611F5910097F29F /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		FA6CB5C32611F5910097F29F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FA6CB5C62611F5910097F29F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA6CB5C82611F5920097F29F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA6CB5CB2611F5920097F29F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,9 +54,9 @@
 		FA6CB5DD2611F5920097F29F /* SignUpAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignUpAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6CB5E12611F5920097F29F /* SignUpAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAppUITests.swift; sourceTree = "<group>"; };
 		FA6CB5E32611F5920097F29F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAEC60D42612091D00E9005C /* PesonalInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesonalInfoVC.swift; sourceTree = "<group>"; };
-		FAEC60DC2612095200E9005C /* PrivacyPolicyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyVC.swift; sourceTree = "<group>"; };
-		FAEC60E12612097200E9005C /* SelectIntersetsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectIntersetsVC.swift; sourceTree = "<group>"; };
+		FAEC60D42612091D00E9005C /* PesonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesonalInfoViewController.swift; sourceTree = "<group>"; };
+		FAEC60DC2612095200E9005C /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		FAEC60E12612097200E9005C /* SelectIntersetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectIntersetsViewController.swift; sourceTree = "<group>"; };
 		FAEC60E626120C3F00E9005C /* SceneTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTitleLabel.swift; sourceTree = "<group>"; };
 		FAEC60EC26120E2E00E9005C /* SceneTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,10 +89,10 @@
 		FA1398F0261204D8005A7E39 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FA6CB5C32611F5910097F29F /* SignUpVC.swift */,
-				FAEC60D42612091D00E9005C /* PesonalInfoVC.swift */,
-				FAEC60DC2612095200E9005C /* PrivacyPolicyVC.swift */,
-				FAEC60E12612097200E9005C /* SelectIntersetsVC.swift */,
+				FA6CB5C32611F5910097F29F /* SignUpViewController.swift */,
+				FAEC60D42612091D00E9005C /* PesonalInfoViewController.swift */,
+				FAEC60DC2612095200E9005C /* PrivacyPolicyViewController.swift */,
+				FAEC60E12612097200E9005C /* SelectIntersetsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -298,11 +298,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAEC60E726120C3F00E9005C /* SceneTitleLabel.swift in Sources */,
-				FA6CB5C42611F5910097F29F /* SignUpVC.swift in Sources */,
-				FAEC60DD2612095200E9005C /* PrivacyPolicyVC.swift in Sources */,
+				FA6CB5C42611F5910097F29F /* SignUpViewController.swift in Sources */,
+				FAEC60DD2612095200E9005C /* PrivacyPolicyViewController.swift in Sources */,
 				FAEC60ED26120E2E00E9005C /* SceneTitle.swift in Sources */,
-				FAEC60E22612097200E9005C /* SelectIntersetsVC.swift in Sources */,
-				FAEC60D52612091D00E9005C /* PesonalInfoVC.swift in Sources */,
+				FAEC60E22612097200E9005C /* SelectIntersetsViewController.swift in Sources */,
+				FAEC60D52612091D00E9005C /* PesonalInfoViewController.swift in Sources */,
 				FA6CB5C02611F5910097F29F /* AppDelegate.swift in Sources */,
 				FA6CB5C22611F5910097F29F /* SceneDelegate.swift in Sources */,
 			);

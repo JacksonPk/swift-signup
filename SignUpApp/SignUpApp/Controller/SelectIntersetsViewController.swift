@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SelectIntersetsVC: UIViewController {
+class SelectIntersetsViewController: UIViewController {
 
     var sceneTitleLabel : SceneTitleLabel!
     
@@ -16,7 +16,7 @@ class SelectIntersetsVC: UIViewController {
         
         sceneTitleLabel = SceneTitleLabel(text: SceneTitle.SelectInterests.rawValue)
         self.view.addSubview(sceneTitleLabel)
-        sceneTitleLabel.autoLayOutLabel(view: self.view)
+        sceneTitleLabel.setAutoLayoutLabel(with : self.view)
         
     }
     
