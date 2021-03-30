@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PesonalInfoViewController: UIViewController {
+class PersonalInfoViewController: UIViewController {
 
     var sceneTitleLabel : SceneTitleLabel!
     

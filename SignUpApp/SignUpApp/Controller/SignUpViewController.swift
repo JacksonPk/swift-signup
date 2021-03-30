@@ -8,17 +8,30 @@
 import UIKit
 
 class SignUpViewController : UIViewController {
-
+    
     var sceneTitleLabel : SceneTitleLabel!
+    
+    @IBAction func tocuhedToNextPage(_ sender: Any) {
+        
+//        let personalInfoVC = PersonalInfoViewController()
+//        self.navigationController?.pushViewController(personalInfoVC, animated: true)
+        
+        let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "PersonalInfoViewController")
+        self.navigationController?.pushViewController(pushVC!, animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /*화면 제목*/
         sceneTitleLabel = SceneTitleLabel(text: SceneTitle.SignUp.rawValue)
         self.view.addSubview(sceneTitleLabel)
         sceneTitleLabel.setAutoLayoutLabel(with : self.view)
         
+        
+        self.view.backgroundColor = .gray
+        navigationController?.isNavigationBarHidden = true
     }
-
+    
 }
 
