@@ -22,7 +22,7 @@ class SceneTitleLabel: UILabel {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func autoLayOutLabel(view : UIView) {
+    func setAutoLayoutLabel(with view : UIView) {
         super.topAnchor.constraint(equalTo: view.topAnchor
                     ,constant: 100).isActive = true
         super.leftAnchor.constraint(equalTo: view.leftAnchor

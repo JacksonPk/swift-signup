@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PesonalInfoVC: UIViewController {
+class PesonalInfoViewController: UIViewController {
 
     var sceneTitleLabel : SceneTitleLabel!
     
@@ -16,7 +16,7 @@ class PesonalInfoVC: UIViewController {
         
         sceneTitleLabel = SceneTitleLabel(text: SceneTitle.PersonalInfo.rawValue)
         self.view.addSubview(sceneTitleLabel)
-        sceneTitleLabel.autoLayOutLabel(view: self.view)
+        sceneTitleLabel.setAutoLayoutLabel(with : self.view)
         
     }
 

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignUpVC : UIViewController {
+class SignUpViewController : UIViewController {
 
     var sceneTitleLabel : SceneTitleLabel!
     
@@ -16,7 +16,7 @@ class SignUpVC : UIViewController {
         
         sceneTitleLabel = SceneTitleLabel(text: SceneTitle.SignUp.rawValue)
         self.view.addSubview(sceneTitleLabel)
-        sceneTitleLabel.autoLayOutLabel(view: self.view)
+        sceneTitleLabel.setAutoLayoutLabel(with : self.view)
         
     }
 
