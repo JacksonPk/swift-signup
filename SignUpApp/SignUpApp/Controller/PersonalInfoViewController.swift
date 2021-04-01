@@ -14,7 +14,7 @@ class PersonalInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sceneTitleLabel = SceneTitleLabel(text: SceneTitle.PersonalInfo.rawValue)
+        sceneTitleLabel = SceneTitleLabel(text: SceneTitle.personalInfo.description)
         self.view.addSubview(sceneTitleLabel)
         sceneTitleLabel.setAutoLayoutLabel(with : self.view)
         

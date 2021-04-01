@@ -14,7 +14,7 @@ class SelectIntersetsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sceneTitleLabel = SceneTitleLabel(text: SceneTitle.SelectInterests.rawValue)
+        sceneTitleLabel = SceneTitleLabel(text: SceneTitle.interests.description)
         self.view.addSubview(sceneTitleLabel)
         sceneTitleLabel.setAutoLayoutLabel(with : self.view)
         

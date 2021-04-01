@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA32DD5526159FAB000E8D77 /* SignUpUITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32DD5426159FAB000E8D77 /* SignUpUITextFieldDelegate.swift */; };
+		FA32DD5A2615A03D000E8D77 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32DD592615A03D000E8D77 /* NetworkHandler.swift */; };
 		FA6CB5C02611F5910097F29F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB5BF2611F5910097F29F /* AppDelegate.swift */; };
 		FA6CB5C22611F5910097F29F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB5C12611F5910097F29F /* SceneDelegate.swift */; };
 		FA6CB5C42611F5910097F29F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB5C32611F5910097F29F /* SignUpViewController.swift */; };
@@ -19,7 +21,7 @@
 		FAEC60DD2612095200E9005C /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC60DC2612095200E9005C /* PrivacyPolicyViewController.swift */; };
 		FAEC60E22612097200E9005C /* SelectIntersetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC60E12612097200E9005C /* SelectIntersetsViewController.swift */; };
 		FAEC60E726120C3F00E9005C /* SceneTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC60E626120C3F00E9005C /* SceneTitleLabel.swift */; };
-		FAEC60ED26120E2E00E9005C /* SceneTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC60EC26120E2E00E9005C /* SceneTitle.swift */; };
+		FAEC60ED26120E2E00E9005C /* SignUpEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC60EC26120E2E00E9005C /* SignUpEnums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA32DD5426159FAB000E8D77 /* SignUpUITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUITextFieldDelegate.swift; sourceTree = "<group>"; };
+		FA32DD592615A03D000E8D77 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 		FA6CB5BC2611F5910097F29F /* SignUpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignUpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6CB5BF2611F5910097F29F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA6CB5C12611F5910097F29F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +62,7 @@
 		FAEC60DC2612095200E9005C /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		FAEC60E12612097200E9005C /* SelectIntersetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectIntersetsViewController.swift; sourceTree = "<group>"; };
 		FAEC60E626120C3F00E9005C /* SceneTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTitleLabel.swift; sourceTree = "<group>"; };
-		FAEC60EC26120E2E00E9005C /* SceneTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTitle.swift; sourceTree = "<group>"; };
+		FAEC60EC26120E2E00E9005C /* SignUpEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEnums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,17 +93,20 @@
 		FA1398F0261204D8005A7E39 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FA32DD5326159F81000E8D77 /* Delegates */,
 				FA6CB5C32611F5910097F29F /* SignUpViewController.swift */,
 				FAEC60D42612091D00E9005C /* PersonalInfoViewController.swift */,
 				FAEC60DC2612095200E9005C /* PrivacyPolicyViewController.swift */,
 				FAEC60E12612097200E9005C /* SelectIntersetsViewController.swift */,
+				FA32DD592615A03D000E8D77 /* NetworkHandler.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		FA32DD3526158C12000E8D77 /* Delegates */ = {
+		FA32DD5326159F81000E8D77 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
+				FA32DD5426159FAB000E8D77 /* SignUpUITextFieldDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -160,7 +167,6 @@
 		FA97B70D2611F78700F090FD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FA32DD3526158C12000E8D77 /* Delegates */,
 				FA6CB5C52611F5910097F29F /* Main.storyboard */,
 				FAEC60E626120C3F00E9005C /* SceneTitleLabel.swift */,
 			);
@@ -170,7 +176,7 @@
 		FAEC60EB26120E0B00E9005C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FAEC60EC26120E2E00E9005C /* SceneTitle.swift */,
+				FAEC60EC26120E2E00E9005C /* SignUpEnums.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,14 +311,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA32DD5A2615A03D000E8D77 /* NetworkHandler.swift in Sources */,
 				FAEC60E726120C3F00E9005C /* SceneTitleLabel.swift in Sources */,
 				FA6CB5C42611F5910097F29F /* SignUpViewController.swift in Sources */,
 				FAEC60DD2612095200E9005C /* PrivacyPolicyViewController.swift in Sources */,
-				FAEC60ED26120E2E00E9005C /* SceneTitle.swift in Sources */,
+				FAEC60ED26120E2E00E9005C /* SignUpEnums.swift in Sources */,
 				FAEC60E22612097200E9005C /* SelectIntersetsViewController.swift in Sources */,
 				FAEC60D52612091D00E9005C /* PersonalInfoViewController.swift in Sources */,
 				FA6CB5C02611F5910097F29F /* AppDelegate.swift in Sources */,
 				FA6CB5C22611F5910097F29F /* SceneDelegate.swift in Sources */,
+				FA32DD5526159FAB000E8D77 /* SignUpUITextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
