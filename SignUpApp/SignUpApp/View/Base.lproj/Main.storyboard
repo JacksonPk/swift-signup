@@ -89,6 +89,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="heI-XV-ikt"/>
+                    <connections>
+                        <outlet property="idTextField" destination="JYa-1H-Vaz" id="Y0O-uY-PON"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

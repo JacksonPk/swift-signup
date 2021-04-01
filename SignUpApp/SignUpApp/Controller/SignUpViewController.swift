@@ -7,10 +7,11 @@
 
 import UIKit
 
-class SignUpViewController : UIViewController {
+class SignUpViewController : UIViewController, UITextFieldDelegate {
     
     var sceneTitleLabel : SceneTitleLabel!
     
+    @IBOutlet weak var idTextField: UITextField!
     @IBAction func tocuhedToNextPage(_ sender: Any) {
         
         let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "PersonalInfoViewController")
@@ -28,7 +29,32 @@ class SignUpViewController : UIViewController {
         
         self.view.backgroundColor = .gray
         self.navigationController?.isNavigationBarHidden = true
+        
+        /*Delegate 설정하기*/
+        idTextField.delegate = self
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
     }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+        }
+    
+    @objc
+    func keyboardWillShow(_ sender: Notification) {
+        self.view.frame.origin.y = -150
+    }
+    
+    @objc
+    func keyboardWillHide(_ sender: Notification) {
+        self.view.frame.origin.y = 0
+    }
+    
     
 }
 
